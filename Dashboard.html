@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>Student Dashboard Area</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RovTech student dashboard area">
+    <meta name="author" content="RovTech">    
+    <link rel="shortcut icon" href="favicon.ico"> 
+	<link rel="icon" type="image/x-icon" href="/static/images/logo.png">
+    <!-- FontAwesome JS-->
+	<!-- <link rel="stylesheet" href="Boot_css/bootstrap.min.css"> -->
+    <script defer src="assets/plugins/fontawesome/js/all.min.js"></script>
+    <!-- App CSS -->  
+    <!-- <link id="theme-style" rel="stylesheet" href="Rovtech.css"> -->
+
+</head> 
+<style>
+	body{
+		background-color: #f5f6fe;
+		height: 100vh;
+		font-family: Arial, Helvetica, sans-serif !important;
+		padding: 0;
+		margin: 0;
+	}
+	.Dash-wrapper{
+		width: 100%;
+		background-color: red;
+		height: 100vh;
+		display: flex;
+	}
+	.side-bar{
+		width: 20%;
+		height: 100vh;
+		background-color: white;
+		box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.049);
+		position: relative;
+		padding: 0;
+		margin: 0;
+	}
+	.client-bar{
+		width: 80%;
+		background-color: #f5f6fe;
+		height: 100vh;
+		margin: 0;
+	}
+	.side-bar ul{
+		width: 100%;
+		list-style: none;
+		padding: 0%;
+	}
+	.side-bar ul li{
+		background-color: #edfdf6;
+		padding: 8px 30px;
+		color: #2477b6;
+		border-left: 5px #2477b6 solid;
+	}
+	.second-side{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		border-top: 1px solid rgb(0, 0, 0);
+	}
+	.Client-area{
+		padding: 0 20px;
+
+	}
+	.top-bar{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 6px 40px;
+		background-color: white;
+		/* padding: 5px; */
+	}
+	input{
+		padding: 15px;
+		width: 400px;
+		border: 1px solid #5d6778;
+		border-radius: 5px;
+		/* outline: #2477b6 1px solid; */
+	}
+	.course-list{
+		text-align: center;
+		width: 100%;
+		padding: 20px 0;
+		background-color: white;
+		border-bottom: #2477b6 2px solid;
+	}
+	.div{
+		display: flex;
+		width: 100%;
+		background-color: white;
+		justify-content: space-around;
+		box-shadow: 20px 20px -10px rgba(0, 0, 0, 0.461);
+	}
+	.div h6{
+		color: #5d6778;
+		font-size: 14px;
+	}
+	.index-link{
+		text-align: center;
+		font-size: 15px;
+		color: #5d6778;
+	}
+	.index-link a{
+		color: #5d6778;
+	}
+	.index-link a:hover{
+		color: #2477b6;
+	}
+	.app{
+		background-color: white;
+		border-left: 3px #2477b6 solid;
+		padding: 0 50px;
+		border-radius: 4px;
+		padding: 30px 30px;
+	}
+	.app p a{
+		color: #2477b6;
+		text-decoration: none;
+	}
+</style>
+
+<body>   	
+	<div class="Dash-wrapper">
+		<div class="side-bar">
+			<h3 style="padding-left: 10px;">RovTech Student Area</h3>
+			<ul>
+				<li><p>Overview</p></li>
+			</ul>
+			<ul class="second-side">
+				<li><p>Settings</p></li>
+				<li><p>Logout</p></li>
+			</ul>
+		</div>
+		<div class="client-bar">
+			<div class="top-bar">
+				<div class="div">
+					<input type="search" name="" placeholder="Search..." id="">
+				</div>
+				<div class="div">
+					<p>Welcome Frank!</p>
+				</div>
+			</div>
+			<div class="Client-area">
+				<h2>Your Area</h2>
+				<div class="app">
+					<h2>No Applications found.</h4>
+						<p>you have not applied for any course, visit our <a href="index.html">Course Page</a></p>
+					</div>
+					<h2>Courses You have applied for</h2>
+				<h4 class="course-list"> Courses yet to complete</h4>
+				<div class="div">
+					<h6>Deadline to Register</h6>
+					<h6>Courses Name</h6>
+					<h6>Start Date</h6>
+					<h6>Date of Application</h6>
+					<h6>Status</h6>
+					<h6>Fee</h6>
+					<h6>Scholarship Details</h6>
+				</div>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<br>
+				<p class="index-link">RovTech Student Area <a href="index.html">GO BACK HOME</a></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 
